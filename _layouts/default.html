@@ -6,8 +6,9 @@
     <title>{{ page.title }} - {{ site.title }}</title>
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
   </head>
-  <body class="bg-cream px-4 text-lg">
-    <div class="container mx-auto relative">
+  <body class="bg-cream text-lg text-black font-body selection:bg-ocre selection:text-cream">
+    {% include navbar.html %}
+    <div class="container mx-auto relative px-4">
       <div class="z-10 relative pb-20">{{ content }}</div>
       <div class="lined-paper fixed top-0 container h-screen z-0 overflow-hidden"></div>
     </div>

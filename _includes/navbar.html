@@ -1,0 +1,30 @@
+<nav class="py-2 z-20 fixed w-full bg-cream border-b-2">
+    <div class="container px-4 mx-auto flex justify-between items-center">
+        <a href="" class="fill-current hover:text-blue transition-all ease-in-out duration-300">
+            {% include logo.html %}
+        </a>
+
+        <div class="flex flex-col">
+            <button class="block xl:hidden uppercase ml-auto" id="menu-button">
+                Menu
+            </button>
+            <ul class="hidden h-screen xl:h-auto xl:flex" id="menu-links">
+                <li class="mt-10 xl:mt-0 text-right xl:text-center xl:ml-8 relative flex items-center justify-end">
+                    <a href="/">agenda</a>
+                </li>
+                <li class="mt-10 xl:mt-0 text-right xl:text-center xl:ml-8 relative flex items-center justify-end">
+                    <a href="/projets">projets</a>
+                </li>
+                <li class="mt-10 xl:mt-0 text-right xl:text-center xl:ml-8 relative flex items-center justify-end">
+                    <a href="/agenda">les artistes</a>
+                </li>
+                <li class="mt-10 xl:mt-0 text-right xl:text-center xl:ml-8 relative flex items-center justify-end">
+                    <a href="/mailing">contact</a>
+                </li>
+                <li class="mt-10 xl:mt-0 text-right xl:text-center xl:ml-8 relative flex items-center justify-end">
+                    <a href="/contact">la radio</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
