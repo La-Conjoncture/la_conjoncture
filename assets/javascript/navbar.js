@@ -27,7 +27,6 @@ links.forEach(link => {
 
     })
   })
-
 })
 
 function closeMenu() {
