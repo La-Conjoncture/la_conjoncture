@@ -20,7 +20,13 @@ module.exports = {
         display: ['Syne Mono', 'ui-sans-serif'],
         body: ['Satoshi', 'ui-sans-serif'],
       },
-    },
+      blur: {
+        xs: '2px',
+      }
+    }
   },
-  plugins: []
+  plugins: [],
+  safelist: [
+    'blur-xs'
+  ]
 }

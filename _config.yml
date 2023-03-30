@@ -13,3 +13,9 @@ exclude:
   - postcss.config.js
   - tailwind.config.js
   - yarn.lock
+
+collections:
+  artists:
+    output: true
+    permalink: /les-artistes/:slug
+
