@@ -1,0 +1,38 @@
+---
+layout: vertical_title
+permalink: "/agenda"
+title: Agenda | La Conjoncture
+display_title: "Agenda"
+---
+
+{% for event in site.events reversed %}
+    {% assign currentdate = event.date | date: "%Y" %}
+    {% if currentdate != date %}
+        {% unless forloop.first %}
+            </ul>
+        {% endunless %}
+        <h2 class="font-display text-2xl md:text-4xl mb-8">{{ currentdate }}</h2>
+        <ul class="mb-12">
+        {% assign date = currentdate %}
+    {% endif %}
+    <li class="mb-12">
+        <p class="font-display text-2xl mb-2">
+            {{ event.display_date }}
+        </p>
+        <h3 class="font-bold text-2xl mb-4">{{ event.title }}</h3>
+        <p>
+            {{ event.location }}
+        </p>
+        {% if event.link %}
+            <a href="{{event.link}}" class="hover:text-blue mt-4 inline-flex items-center transition-all ease-in-out duration-300" target="_blank">
+                {{event.link_anchor | default: "En savoir plus" }}
+                <div class="h-4 w-auto ml-2">
+                    {% include arrow_svg.html %}
+                </div>
+            </a>
+        {% endif %}
+    </li>
+    {% if forloop.last %}
+        </ul>
+    {% endif %}
+{% endfor %}

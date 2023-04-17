@@ -18,4 +18,8 @@ collections:
   artists:
     output: true
     permalink: /les-artistes/:slug
+  events:
+    output: false
+    future: true
+    sort_by: date
 
