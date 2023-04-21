@@ -22,4 +22,8 @@ collections:
     output: false
     future: true
     sort_by: date
+  projects:
+    output: true
+    permalink: /projets/:slug
+    sort_by: order
 
