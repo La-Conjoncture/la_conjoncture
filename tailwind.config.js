@@ -13,7 +13,8 @@ module.exports = {
       'black': '#050F08',
       'grey': '#D5D8D6',
       'blue': '#0060D6',
-      'ocre': '#852E25'
+      'ocre': '#852E25',
+      'purple': '#534B9C'
     },
     extend: {
       fontFamily: {
