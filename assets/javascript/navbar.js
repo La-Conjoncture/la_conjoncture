@@ -24,7 +24,6 @@ links.forEach(link => {
 
     link.addEventListener('mouseleave', event => {
       annotation.remove();
-
     })
   })
 })

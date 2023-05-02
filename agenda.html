@@ -24,7 +24,7 @@ display_title: "Agenda"
             {{ event.location }}
         </p>
         {% if event.link %}
-            <a href="{{event.link}}" class="hover:text-blue mt-4 inline-flex items-center transition-all ease-in-out duration-300" target="_blank">
+            <a href="{{event.link}}" class="mt-4 inline-flex items-center bracket-link" target="_blank">
                 {{event.link_anchor | default: "En savoir plus" }}
                 <div class="h-4 w-auto ml-2">
                     {% include arrow_svg.html %}

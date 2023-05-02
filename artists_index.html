@@ -8,15 +8,12 @@ display_title: "Les artistes"
 <ul>
     {% for artist in site.artists %}
         <li>
-            <a href={{ artist.url }} class="font-display text-2xl lg:text-4xl mb-8 lg:mb-10 inline-flex items-center artist-link transition-all duration-300">
+            <a href={{ artist.url }} class="font-display text-2xl lg:text-4xl mb-8 lg:mb-10 inline-flex items-center bracket-link">
             {{ artist.full_name }}
-            <div class="text-black h-6 lg:h-8 w-auto ml-2 lg:ml-4">
+            <div class="h-6 lg:h-8 w-auto ml-2 lg:ml-4">
                 {% include arrow_svg.html %}
             </div>
             </a>
         </li>
     {% endfor %}
 </ul>
-
-<script src="/assets/javascript/artists_index.js" type="module"></script>
-
