@@ -17,10 +17,17 @@ addEventListener('resize', (event) => {
   }
 });
 
+if (document.getElementById('active-link')) {
+  const annotationForActiveLink = RoughNotation.annotate(document.getElementById('active-link'), { type: 'bracket', color: '#852E25', animationDuration: 500, strokeWidth: 3, padding: 3, brackets: ['left', 'right']});
+  annotationForActiveLink.show();
+}
+
 links.forEach(link => {
   link.addEventListener('mouseenter', event => {
     const annotation = RoughNotation.annotate(event.target, { type: 'underline', color: '#852E25', padding: 1 });
-    annotation.show();
+    if (!(event.target.id === 'active-link')) {
+      annotation.show();
+    }
 
     link.addEventListener('mouseleave', event => {
       annotation.remove();
