@@ -4,7 +4,7 @@ layout: default
 <img src="/assets/img/la-conjoncture-signe.svg" alt="" class="absolute -right-24 md:-right-40 lg:-right-56 -top-24 lg:-top-64 z-20 mix-blend-multiply w-1/2 lg:w-2/5 h-auto rotate-45">
 
 <div class="pt-24 lg:pt-32">
-    <a href="/projets" class="inline-flex items-center text-ocre mb-12" id="back-link">
+    <a href="/projets" class="inline-flex items-center text-ocre mb-12 bracket-link">
         <div class="h-4 w-auto mr-2 rotate-180">
             {% include arrow_svg.html %}
         </div>
@@ -19,7 +19,7 @@ layout: default
 </div>
 
 {% if page.link %}
-    <a href="{{page.link}}" class="hover:text-blue mt-12 inline-flex items-center font-display text-xl md:text-2xl transition-all ease-in-out duration-300" target="_blank">
+    <a href="{{page.link}}" class="mt-12 inline-flex items-center font-display text-xl md:text-2xl bracket-link" target="_blank">
         {{page.link_anchor | default: "En savoir plus" }}
         <div class="h-4 w-auto ml-2">
             {% include arrow_svg.html %}
@@ -27,13 +27,9 @@ layout: default
     </a>
 {% endif %}
 
-<div class="lg:flex lg:justify-between mt-16">
-    <div class="lg:w-4/6 prose-headings:mt-8 lg:prose-headings:mt-12 first:prose-headings:mt-0 prose-headings:mb-4 prose-headings:font-display prose-h2:text-xl md:prose-h2:text-2xl">
+<div class="mt-16 max-w-xl">
+    <div class="prose-headings:mt-8 lg:prose-headings:mt-12 first:prose-headings:mt-0 prose-headings:mb-4 prose-headings:font-display prose-h2:text-xl md:prose-h2:text-2xl prose-p:mb-4 prose-a:underline">
         {{ page.content }}
-    </div>
-
-    <div class="lg:w-1/6">
-        <h2 class="mb-4 font-display text-xl md:text-2xl">Agenda</h2>
     </div>
 </div>
 
