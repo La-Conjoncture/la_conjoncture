@@ -15,7 +15,15 @@ bracketLinks.forEach(link => {
 })
 
 if (document.getElementById('cms-content')) {
-  const highlightLinks =  Array.from(document.getElementById('cms-content').getElementsByTagName('a'));
+  highlightOnHover('cms-content');
+}
+
+if (document.getElementById('footer')) {
+  highlightOnHover('footer');
+}
+
+function highlightOnHover(containerId) {
+  const highlightLinks =  Array.from(document.getElementById(containerId).getElementsByTagName('a'));
 
   highlightLinks.forEach(link => {
     link.addEventListener('mouseenter', event => {

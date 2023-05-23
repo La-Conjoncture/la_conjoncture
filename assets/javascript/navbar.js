@@ -1,5 +1,7 @@
 const menuButton = document.getElementById('menu-button');
 const menuLinks = document.getElementById('menu-links');
+const hamburgerIcon = document.getElementById('hamburger-icon');
+const closeIcon = document.getElementById('close-icon');
 const body = document.body;
 const links = document.querySelectorAll('.link');
 
@@ -38,9 +40,14 @@ links.forEach(link => {
 function closeMenu() {
   menuLinks.classList.add('hidden');
   body.classList.remove('overflow-hidden');
+  closeIcon.classList.add('hidden');
+  hamburgerIcon.classList.remove('hidden');
+
 }
 
 function openMenu() {
   menuLinks.classList.remove('hidden');
   body.classList.add('overflow-hidden');
+  hamburgerIcon.classList.add('hidden');
+  closeIcon.classList.remove('hidden');
 }
