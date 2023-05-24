@@ -4,8 +4,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>{{ page.title }} - {{ site.title }}</title>
+    <meta name="title" content="{{ page.title }} - {{ site.title }}">
+    <meta name="description" content="{{ page.meta_description }}">
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
-
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/la-conjoncture-favicon.png">
     <script src="https://unpkg.com/rough-notation/lib/rough-notation.iife.js"></script>
   </head>
   <body class="bg-cream text-lg text-black font-body selection:bg-ocre selection:text-cream overflow-x-hidden">
