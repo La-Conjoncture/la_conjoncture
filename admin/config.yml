@@ -21,3 +21,32 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - { label: "Image", name: "picture", widget: "image", hint: "résolution : 400px de large, 72 px/ pouce", required: false }
       - { label: "Description", name: "body", widget: "markdown" }
+  - name: "projects"
+    label: "Project"
+    folder: "_projects"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "project" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Image", name: "picture", widget: "image", hint: "résolution : 400px de large, 72 px/ pouce", required: false }
+      - { label: "Order", name: "order", widget: "number", value_type: "int", min: 1 }
+      - { label: "Category", name: "category", widget: "string", required: false }
+      - { label: "Description", name: "body", widget: "markdown" }
+      - { label: "Link", name: "link", widget: "string", required: false, hint: "Lien par exemple www.facebook.com" }
+      - { label: "Link text", name: "link_anchor", widget: "string", required: false, hint: "Texte du lien par exemple Accéder au dossier de production" }
+  - name: "events"
+    label: "Event"
+    folder: "_events"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime", date_format: "DD.MM.YYYY", time_format: false, picker_utc: false }
+      - { label: "Display date", name: "display_date", widget: "string" }
+      - { label: "Location", name: "location", widget: "string", required: false }
+      - { label: "Link", name: "link", widget: "string", required: false, hint: "Lien par exemple www.facebook.com" }
+      - { label: "Link text", name: "link_anchor", widget: "string", required: false, hint: "Accéder à l'event Facebook" }
+
