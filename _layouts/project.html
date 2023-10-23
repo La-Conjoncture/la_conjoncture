@@ -12,10 +12,12 @@ layout: default
     </a>
 
     <h1 class="font-display text-2xl md:text-4xl lg:text-5xl mb-8">
-        {{ page.name }}
+        {{ page.title }}
     </h1>
 
-    <img src="/assets/img/projects/{{ page.picture }}" alt="" class="object-cover w-full h-56 md:h-80 lg:h-[32rem]">
+    {% if page.picture %}
+        <img src="{{ page.picture }}" alt="" class="object-cover w-full h-56 md:h-80 lg:h-[32rem]">
+    {% endif %}
 </div>
 
 {% if page.link %}

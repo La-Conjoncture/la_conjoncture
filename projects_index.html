@@ -7,12 +7,12 @@ meta_description: "Tous les projets de La Conjoncture, compagnie artistique situ
 
 {% for project in site.projects %}
     <a href={{ project.url }} class="block w-full h-56 bg-purple mb-6 flex justify-center items-center text-cream relative overflow-hidden">
-        <img src="/assets/img/projects/{{ project.picture }}" alt="" class="object-cover z-10 absolute">
+        <img src="{{ project.picture }}" alt="" class="object-cover z-10 absolute">
         <div class="z-20 absolute inset-0 bg-purple opacity-75">
         </div>
         <div class="z-30 relative">
             <h2 class="font-display text-2xl lg:text-4xl inline-flex items-center bracket-link white-bracket-link">
-                {{ project.name }}
+                {{ project.title }}
                 <span class="h-6 lg:h-8 w-auto ml-2 lg:ml-4">
                 {% include arrow_svg.html %}
             </span>
