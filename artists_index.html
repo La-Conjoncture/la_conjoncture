@@ -9,7 +9,7 @@ meta_description : "Découvrez tous les artistes de La Conjoncture : acteur·ice
     {% for artist in site.artists %}
         <li>
             <a href={{ artist.url }} class="font-display text-2xl lg:text-4xl mb-8 lg:mb-10 inline-flex items-center bracket-link">
-            {{ artist.full_name }}
+            {{ artist.title }}
             <div class="h-6 lg:h-8 w-auto ml-2 lg:ml-4">
                 {% include arrow_svg.html %}
             </div>

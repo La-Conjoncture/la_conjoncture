@@ -1,0 +1,23 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/img/uploads"
+
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "-"
+
+collections:
+  - name: "artists"
+    label: "Artist"
+    folder: "_artists"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "artist"}
+      - {label: "Title", name: "title", widget: "string"}
+      - { label: "Image", name: "picture", widget: "image", hint: "résolution : 400px de large, 72 px/ pouce", required: false }
+      - { label: "Description", name: "body", widget: "markdown" }
