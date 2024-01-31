@@ -6,10 +6,9 @@ order: 1
 link: ""
 link_anchor: ""
 ---
-
 ## Avec
 
-Ilan Gratini, Franck Sammartano, et Erwin le Goallec
+Ilan Gratini, Franck Sammartano, Erwin le Goallec, Audric Chauvin
 
 ## Mise en scène
 
@@ -38,4 +37,3 @@ déserté les moeurs, est remplacée par la violence d’un temps qui passe, ou 
 alcoolisée de sa condition, où la fuite de la réalité est fatalité, faute de pouvoir penser sa condition.
 « Chez ces gens-là on ne vit pas, on triche. » Espace de contraste et de refoulement, la parole est donnée à des
 archétypes complexes d’une réalité fort éloignée de nos salles de spectacle.
-
