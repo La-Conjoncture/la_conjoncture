@@ -9,4 +9,4 @@ Ceinture noir de karaté, chorégraphe déjà pour plusieurs pièces, Erwin coll
 Maioui Company. Il rejoint la Compagnie Linga en 2020 pour COSMOS. Il est membre fondateur du Collectif Ô 77
 avec Hugues Rondepierre et Emilia Saavedra Paeile, dans lequel il travaille en tant qu’interprète et chorégraphe.
 
-En 2021 il commence une collaboration avec Anoesis pour la pièce Le Sourire des Escargots.
+En 2021 il commence une collaboration avec La Conjoncture pour la pièce Le Sourire des Escargots.
