@@ -25,7 +25,7 @@ layout: default
             </h1>
 
             <div class="lg:flex flex-row-reverse items-start relative">
-                {% if page.picture %}
+                {% if page.picture and page.picture != '' %}
                     <img src="{{ page.picture }}" alt="Portrait de {{ page.title }}" class="lg:absolute lg:top-0 lg:-right-40 w-96 lg:w-80 xl:w-96 h-auto lg:-rotate-6">
                 {% endif %}
                 <div class="mt-8 lg:mt-0 lg:w-3/5 mr-auto prose-p:mb-4 prose-a:underline" id="cms-content">
