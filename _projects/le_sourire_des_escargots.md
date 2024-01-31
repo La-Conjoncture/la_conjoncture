@@ -3,8 +3,8 @@ layout: project
 title: Le sourire des escargots
 picture: /assets/img/uploads/dscf3152.jpg
 order: 1
-link: https://la-convergence.com/
-link_anchor: Accéder au dossier de production
+link: ""
+link_anchor: ""
 ---
 
 ## Avec
