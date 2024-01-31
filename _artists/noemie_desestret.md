@@ -1,7 +1,7 @@
 ---
 layout: artist
-title: "Noémie Desestret"
-picture: /assets/img/uploads/noemie.jpg
+title: Noémie Desestret
+picture: ""
 ---
 
 Noémie Desestret intègre de 2015 à 2018 le Cycle Professionnel Théâtral de Grenoble. Elle
