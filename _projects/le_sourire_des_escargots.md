@@ -1,10 +1,10 @@
 ---
 layout: project
-title: "Le sourire des escargots"
-link: "https://la-convergence.com/"
-link_anchor: "Accéder au dossier de production"
-picture: "/assets/img/uploads/photo-provisoire-home.jpg"
+title: Le sourire des escargots
+picture: /assets/img/uploads/dscf3152.jpg
 order: 1
+link: https://la-convergence.com/
+link_anchor: Accéder au dossier de production
 ---
 
 ## Avec
