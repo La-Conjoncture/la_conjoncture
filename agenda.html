@@ -23,7 +23,7 @@ meta_description: "Tous les évènements de La Conjoncture, compagnie artistique
         <p>
             {{ event.location }}
         </p>
-        {% if event.link %}
+        {% if event.link and event.link != "" %}
             <a href="{{event.link}}" class="mt-4 inline-flex items-center bracket-link" target="_blank">
                 {{event.link_anchor | default: "En savoir plus" }}
                 <div class="h-4 w-auto ml-2">
