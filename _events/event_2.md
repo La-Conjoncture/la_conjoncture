@@ -1,6 +1,6 @@
 ---
-date: 2023-03-10
-display_date: Du 10 au 15 mars 2023
 title: Le sourire des escargots - Résidence
-location : Le Croiseur - 4 Rue de la Croix-Barret, 69007 Lyon, France
+date: 2023-07-06T22:00:00.000Z
+display_date: Du 3 au 7 Juillet 2023
+location: Le Croiseur - 4 Rue de la Croix-Barret, 69007 Lyon, France
 ---
